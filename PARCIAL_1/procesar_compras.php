@@ -1,13 +1,21 @@
 <?php
 include 'funciones_tienda.php';
 
-$titulos = [
-    'camisa' => 'Página de Inicio',
-    'pantalon' => 'Sobre Nosotros',
-    'zapato' => 'Contáctanos',
-    'calcetines' => 'Contáctanos',
-    'gorra' => 'Contáctanos'
+$productos = [
+    'camisa' => 50,
+    'pantalon' => 70,
+    'zapato' => 80,
+    'calcetines' => 10,
+    'gorra' => 25
 ];
+
+$carrito = [
+    'camisa' => 2,
+    'pantalon' => 1,
+    'zapatos' => 1,
+    'calcetines' => 3,
+    'gorra' => 0
+    ];
 
 
 /*$subtotal=1000;
