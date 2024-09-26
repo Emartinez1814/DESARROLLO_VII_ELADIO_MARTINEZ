@@ -11,8 +11,8 @@ class Biblioteca {
 
     public function listarLibros() {
         foreach ($this->libros as $libro) {
-            echo $libro->obtenerInformacion() . "\n";
-            echo "Disponible: " . ($libro->estaDisponible() ? "Sí" : "No") . "\n\n";
+            echo $libro->obtenerInformacion() . "<br>";
+            echo "Disponible: " . ($libro->estaDisponible() ? "Sí" : "No") . "<br><br>";
         }
     }
 
@@ -46,18 +46,18 @@ $libro2 = new LibroDigital("Dune", "Frank Herbert", 1965, "EPUB", 3.2);
 $biblioteca->agregarLibro($libro1);
 $biblioteca->agregarLibro($libro2);
 
-echo "Listado inicial de libros:\n";
+echo "<br>Listado inicial de libros:<br>";
 $biblioteca->listarLibros();
 
-echo "Prestando 'El principito'...\n";
+echo "Prestando 'El principito'...<br>";
 $biblioteca->prestarLibro("El principito");
 
-echo "Listado después de prestar:\n";
+echo "Listado después de prestar:<br>";
 $biblioteca->listarLibros();
 
-echo "Devolviendo 'El principito'...\n";
+echo "Devolviendo 'El principito'...<br>";
 $biblioteca->devolverLibro("El principito");
 
-echo "Listado final:\n";
+echo "Listado final:<br>";
 $biblioteca->listarLibros();
 ?>
