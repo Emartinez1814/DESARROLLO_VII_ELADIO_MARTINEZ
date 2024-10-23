@@ -15,6 +15,10 @@ function validarSitioWeb($sitioWeb) {
     return empty($sitioWeb) || filter_var($sitioWeb, FILTER_VALIDATE_URL);
 }
 
+function validarFechaNacimiento($fecha_nacimiento) {
+    return !empty($fecha_nacimiento);
+}
+
 function validarGenero($genero) {
     $generosValidos = ['masculino', 'femenino', 'otro'];
     return in_array($genero, $generosValidos);

@@ -15,6 +15,10 @@ function sanitizarSitioWeb($sitioWeb) {
     return filter_var(trim($sitioWeb), FILTER_SANITIZE_URL);
 }
 
+function sanitizarFechaNacimiento($fecha_nacimiento) {
+    return filter_var(($fecha_nacimiento), FILTER_SANITIZE_STRING);
+}
+
 function sanitizarGenero($genero) {
     return filter_var(trim($genero), FILTER_SANITIZE_STRING);
 }
