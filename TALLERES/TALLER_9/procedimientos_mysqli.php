@@ -135,9 +135,9 @@ function obtenerEstadisticasCliente($conn, $cliente_id) {
 }
 
 // Ejemplos de uso, las funciones estan comentados para no ejecutarlos
-//registrarVenta($conn, 4, 2, 1);
+//registrarVenta($conn, 1, 4, 1);
 //devolucionVenta($conn,7,1,2);
-aplicarDescuento($conn,1, 5);
+//aplicarDescuento($conn,1, 5);
 generarReporteBajoStock($conn,20);
 calcularComisiones($conn,4,2);
 obtenerEstadisticasCliente($conn, 1);
